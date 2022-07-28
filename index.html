@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+</head>
+    <body>
+   <h2 class="h1">Share Of Miras</h2>
+    <P>Total Amount</P>
+   <input type="number" id="share">
+   <br><button class="h2" onclick="let totalAmount=document.getElementById('share').value;
+   let wifeShare=totalAmount/8;
+   let sonShare=totalAmount-wifeShare;
+   let ful='Total amount is '+ totalAmount +' , the share of wife is '+ wifeShare+' and the share of son is '+sonShare;
+   document.getElementById('heading3').innerText=ful;
+    ">Search</button>
+   <p class="h2" id="heading3"></p>
+   <br>
+   <h2 class="h1">Qaza Salah</h2>
+    <p>Age</p>
+   <input type="number" id="qaza">
+   <br>
+   <button class="h2" onclick="let age=getElementById('qaza').value;
+ 
+let qazaSalahYear=age-12;
+let totalDay=365*qazaSalahYear;
+let totalSalah=totalDay*5;
+let result='The total Qaza Salah  is '+totalSalah;
+document.getElementById('heading5').innerText=result;
+">Search</button>
+<p class="h2" id="heading5"></p>
+
+    </button>  
+</body>
+    
+</html>
